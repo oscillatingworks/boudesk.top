@@ -1,0 +1,226 @@
+/*!
+ * Start Bootstrap - Stylish Portfolio Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* pilastore fonts */
+
+@font-face {
+  font-family: 'TechnaSans-Regular';
+  src: url('../fonts/techna/TechnaSans-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/techna/TechnaSans-Regular.svg#TechnaSans-Regular') format('svg'),
+       url('../fonts/techna/TechnaSans-Regular.ttf') format('truetype'),
+       url('../fonts/techna/TechnaSans-Regular.ttf') format('opentype'),
+       url('../fonts/techna/TechnaSans-Regular.woff') format('woff'),
+       url('../fonts/techna/TechnaSans-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Global Styles */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+}
+
+.text-vertical-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.text-vertical-center h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 10em;
+    font-weight: 400;
+}
+
+/* Custom Button Styles */
+
+.btn-dark {
+    border-radius: 0;
+    color: #fff;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+    color: #fff;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.btn-light {
+    border-radius: 0;
+    color: #333;
+    background-color: rgb(255,255,255);
+}
+
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active {
+    color: #333;
+    background-color: rgba(255,255,255,0.8);
+}
+
+.btn-success {
+    border-radius: 0;
+    width: 9em;
+    font-size: 1em;
+}
+
+.btn-blink {
+  animation: blinker 1s linear infinite;
+  -moz-animation: blinker 1s linear infinite;
+  -webkit-animation: blinker 1s linear infinite;
+  -o-animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% { opacity: 0.75; }
+}
+
+@-moz-keyframes blinker {
+  50% { opacity: 0.75; }
+}
+
+@-webkit-keyframes blinker {
+  50% { opacity: 0.75; }
+}
+
+/* Custom Horizontal Rule */
+
+hr.small {
+    max-width: 100px;
+}
+
+hr.dark {
+    border-color: #000;
+}
+
+/* Links with custom color */
+
+a.clean {
+    color: #333;
+}
+
+/* oscillatingworks fonts */
+
+.oswfont {
+    font-family: 'Nixie One', cursive;
+}
+
+/* Header */
+
+.header {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    caret-color: transparent;
+}
+
+.header h4 {
+    font-size: 1.2em;
+}
+
+@media (max-width: 767px) {
+    .header h1 {
+        font-size: 6em;
+    }
+    .header h4 {
+        font-size: 1em;
+    }
+}
+
+/* Lead */
+
+h1.lead {
+    color: #FF5D73;
+    /*color: #B0D0D3;*/
+    text-shadow: 4px 6px 0px #FFE4E5;
+    font-family: "Gochi Hand";
+}
+
+h4.lead {
+    color: #fff;
+    font-weight: 400;
+}
+
+.highlight{
+    background-color: #FF5D73;
+    box-shadow: 4px 6px 0px #FFE4E5;
+    padding: 0.3em 0.3em 0.3em 0.3em;
+}
+
+/* Buttons */
+
+.btn {
+  box-shadow: 4px 6px 0px #FFE4E5;
+}
+
+.btn-success {
+  color: #fff;
+  background-color: #FF5D73;
+  border-color: #FF5D73;
+}
+
+.btn-success:hover,
+.btn-success:focus,
+.btn-success.focus,
+.btn-success:active,
+.btn-success.active,
+.open > .dropdown-toggle.btn-success {
+  color: #fff;
+  background-color: #00A6FF;
+  border-color: #00A6FF;
+  box-shadow: 4px 6px 2px #FFF;
+}
+
+/* Typed Cursor */
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+/* Footer */
+
+footer {
+    padding: 100px 0;
+    background-color: #D9F8FA;
+    width: 100%;
+    background: url("../img/bou.png");
+    background-size: cover;
+}
