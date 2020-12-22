@@ -194,7 +194,22 @@ h4.lead {
   .btn-success:active,
   .btn-success.active,
   .open > .dropdown-toggle.btn-success {
-    box-shadow: 4px 6px 2px #FFF;
+    box-shadow: 4px 6px 2px #FF5D73;
+  }
+}
+
+.btn-last {
+  box-shadow: 4px 6px 0px #FFE4E5;
+}
+
+@media (max-width: 767px) {
+  .btn-last:hover,
+  .btn-last:focus,
+  .btn-last.focus,
+  .btn-last:active,
+  .btn-last.active,
+  .open > .dropdown-toggle.btn-last {
+    box-shadow: 4px 6px 2px #FF5D73;
   }
 }
 
