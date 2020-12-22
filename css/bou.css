@@ -4,20 +4,6 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-/* pilastore fonts */
-
-@font-face {
-  font-family: 'TechnaSans-Regular';
-  src: url('../fonts/techna/TechnaSans-Regular.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/techna/TechnaSans-Regular.svg#TechnaSans-Regular') format('svg'),
-       url('../fonts/techna/TechnaSans-Regular.ttf') format('truetype'),
-       url('../fonts/techna/TechnaSans-Regular.ttf') format('opentype'),
-       url('../fonts/techna/TechnaSans-Regular.woff') format('woff'),
-       url('../fonts/techna/TechnaSans-Regular.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
-
 /* Global Styles */
 
 html,
@@ -27,7 +13,8 @@ body {
 }
 
 body {
-    font-family: 'Work Sans', sans-serif;
+    /*font-family: 'Work Sans', sans-serif;*/
+    font-family: 'Mali', cursive;
     font-weight: 300;
 }
 
@@ -74,7 +61,7 @@ body {
 
 .btn-success {
     border-radius: 0;
-    width: 9em;
+    width: 7em;
     font-size: 1em;
 }
 
@@ -140,7 +127,7 @@ a.clean {
 
 @media (max-width: 767px) {
     .header h1 {
-        font-size: 6em;
+        font-size: 8em;
     }
     .header h4 {
         font-size: 1em;
@@ -169,8 +156,18 @@ h4.lead {
 
 /* Buttons */
 
-.btn {
-  box-shadow: 4px 6px 0px #FFE4E5;
+@media (min-width: 767px) {
+  .btn {
+    box-shadow: 4px 6px 0px #FFE4E5;
+  }
+}
+
+@media (max-width: 767px) {
+  .btn {
+    width: 100%;
+    display: block;
+    padding: 0.4em;
+  }
 }
 
 .btn-success {
@@ -188,7 +185,28 @@ h4.lead {
   color: #fff;
   background-color: #00A6FF;
   border-color: #00A6FF;
-  box-shadow: 4px 6px 2px #FFF;
+}
+
+@media (min-width: 767px) {
+  .btn-success:hover,
+  .btn-success:focus,
+  .btn-success.focus,
+  .btn-success:active,
+  .btn-success.active,
+  .open > .dropdown-toggle.btn-success {
+    box-shadow: 4px 6px 2px #FFF;
+  }
+}
+
+/* Selected Text */
+::-moz-selection { /* Code for Firefox */
+  color: #FFF;
+  background: #00A6FF;
+}
+
+::selection {
+  color: #FFF;
+  background: #00A6FF;
 }
 
 /* Typed Cursor */
@@ -219,8 +237,9 @@ h4.lead {
 
 footer {
     padding: 100px 0;
-    background-color: #D9F8FA;
     width: 100%;
+    font-family: 'Work Sans', sans-serif;
     background: url("../img/bou.png");
+    background-color: #D9F8FA;
     background-size: cover;
 }
