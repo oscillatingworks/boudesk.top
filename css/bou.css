@@ -120,6 +120,12 @@ a.clean {
     caret-color: transparent;
 }
 
+@media (max-width: 767px) {
+  .header {
+    background: #eee no-repeat center center scroll;
+  }
+}
+
 .header h4 {
     font-size: 1.2em;
 }
