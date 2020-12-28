@@ -1,0 +1,20 @@
+[[redirects]]
+  from = "/releases"
+  to = "https://github.com/oscillatingworks/bou/releases/latest"
+  status = 200
+  force = true
+  headers = {X-From = "Netlify"}
+
+[[redirects]]
+  from = "/code"
+  to = "https://github.com/oscillatingworks/bou"
+  status = 200
+  force = true
+  headers = {X-From = "Netlify"}
+
+[[redirects]]
+  from = "/docs"
+  to = "https://github.com/oscillatingworks/bou/tree/main/docs"
+  status = 200
+  force = true
+  headers = {X-From = "Netlify"}
